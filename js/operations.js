@@ -415,4 +415,7 @@ jQuery(document).on('focusin', function(e) {
     if (jQuery(e.target).closest(".attachment-display-settings").length) {
         e.stopImmediatePropagation();
     }
+    if (jQuery(e.target).closest(".media-toolbar").length) {
+        e.stopImmediatePropagation();
+    }      
 });
